@@ -1,0 +1,118 @@
+2023-01-09 20:31:03,442 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-3] 
+    select
+        user0_.email as email1_1_,
+        user0_.password as password2_1_ 
+    from
+        schedule_user user0_ 
+    where
+        user0_.email=? 
+        and user0_.password=?
+2023-01-09 20:31:03,465 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 20:31:03,467 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [2] as [VARCHAR] - [1234]
+2023-01-09 20:31:08,012 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-6] 
+    select
+        schedule0_.id as id1_0_,
+        schedule0_.date as date2_0_,
+        schedule0_.title as title3_0_,
+        schedule0_.email as email4_0_ 
+    from
+        schedule schedule0_ 
+    where
+        schedule0_.email=?
+2023-01-09 20:31:08,058 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-6] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 20:32:56,231 INFO org.springframework.boot.StartupInfoLogger [main] Starting JpaTest2Application using Java 11.0.16 on DESKTOP-S1Q1B2U with PID 44908 (C:\Users\AdmiN\Documents\dev\FAST_JAVA\jpaTest2\build\classes\java\main started by AdmiN in C:\Users\AdmiN\Documents\dev\FAST_JAVA\jpaTest2)
+2023-01-09 20:32:56,239 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-01-09 20:32:56,240 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 20:33:10,015 INFO org.springframework.boot.StartupInfoLogger [main] Started JpaTest2Application in 15.187 seconds (JVM running for 20.047)
+2023-01-09 20:33:26,028 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-3] 
+    select
+        user0_.email as email1_1_,
+        user0_.password as password2_1_ 
+    from
+        schedule_user user0_ 
+    where
+        user0_.email=? 
+        and user0_.password=?
+2023-01-09 20:33:26,061 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 20:33:26,073 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [2] as [VARCHAR] - [1234]
+2023-01-09 20:33:31,125 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-6] 
+    select
+        schedule0_.id as id1_0_,
+        schedule0_.date as date2_0_,
+        schedule0_.title as title3_0_,
+        schedule0_.email as email4_0_ 
+    from
+        schedule schedule0_ 
+    where
+        schedule0_.email=?
+2023-01-09 20:33:31,155 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-6] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 20:33:58,557 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] 
+    select
+        user_.email,
+        user_.password as password2_1_ 
+    from
+        schedule_user user_ 
+    where
+        user_.email=?
+2023-01-09 20:33:58,558 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 20:33:58,568 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] 
+    insert 
+    into
+        schedule
+        (date, title, email) 
+    values
+        (?, ?, ?)
+2023-01-09 20:33:58,570 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [VARCHAR] - [2023-01-09]
+2023-01-09 20:33:58,570 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [2] as [VARCHAR] - [그룹스터디]
+2023-01-09 20:33:58,571 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [3] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 20:33:58,619 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-8] 
+    select
+        schedule0_.id as id1_0_,
+        schedule0_.date as date2_0_,
+        schedule0_.title as title3_0_,
+        schedule0_.email as email4_0_ 
+    from
+        schedule schedule0_ 
+    where
+        schedule0_.email=?
+2023-01-09 20:33:58,621 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-8] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 20:34:01,602 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        schedule0_.id as id1_0_0_,
+        schedule0_.date as date2_0_0_,
+        schedule0_.title as title3_0_0_,
+        schedule0_.email as email4_0_0_ 
+    from
+        schedule schedule0_ 
+    where
+        schedule0_.id=?
+2023-01-09 20:34:01,604 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [6]
+2023-01-09 20:34:01,639 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    delete 
+    from
+        schedule 
+    where
+        id=?
+2023-01-09 20:34:01,640 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [6]
+2023-01-09 20:34:01,661 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        schedule0_.id as id1_0_,
+        schedule0_.date as date2_0_,
+        schedule0_.title as title3_0_,
+        schedule0_.email as email4_0_ 
+    from
+        schedule schedule0_ 
+    where
+        schedule0_.email=?
+2023-01-09 20:34:01,663 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 20:37:38,767 INFO org.springframework.boot.StartupInfoLogger [main] Starting JpaTest2Application using Java 11.0.16 on DESKTOP-S1Q1B2U with PID 33876 (C:\Users\AdmiN\Documents\dev\FAST_JAVA\jpaTest2\build\classes\java\main started by AdmiN in C:\Users\AdmiN\Documents\dev\FAST_JAVA\jpaTest2)
+2023-01-09 20:37:38,774 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-01-09 20:37:38,776 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 20:37:47,151 INFO org.springframework.boot.StartupInfoLogger [main] Started JpaTest2Application in 9.445 seconds (JVM running for 13.928)
+2023-01-09 20:39:47,741 INFO org.springframework.boot.StartupInfoLogger [main] Starting JpaTest2Application using Java 11.0.16 on DESKTOP-S1Q1B2U with PID 22372 (C:\Users\AdmiN\Documents\dev\FAST_JAVA\jpaTest2\build\classes\java\main started by AdmiN in C:\Users\AdmiN\Documents\dev\FAST_JAVA\jpaTest2)
+2023-01-09 20:39:47,747 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-01-09 20:39:47,748 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 20:39:57,587 INFO org.springframework.boot.StartupInfoLogger [main] Started JpaTest2Application in 11.598 seconds (JVM running for 15.702)
+2023-01-09 20:40:08,130 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-3] select user0_.email as email1_1_, user0_.password as password2_1_ from schedule_user user0_ where user0_.email=? and user0_.password=?
+2023-01-09 20:40:08,147 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 20:40:08,152 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [2] as [VARCHAR] - [1234]

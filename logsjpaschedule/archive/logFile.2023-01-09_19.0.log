@@ -1,0 +1,51 @@
+2023-01-09 19:45:11,358 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-3] 
+    select
+        user0_.email as email1_1_,
+        user0_.password as password2_1_ 
+    from
+        schedule_user user0_ 
+    where
+        user0_.email=? 
+        and user0_.password=?
+2023-01-09 19:45:11,375 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 19:45:11,378 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [2] as [VARCHAR] - [1234]
+2023-01-09 19:45:16,920 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-6] 
+    select
+        schedule0_.id as id1_0_,
+        schedule0_.date as date2_0_,
+        schedule0_.title as title3_0_,
+        schedule0_.email as email4_0_ 
+    from
+        schedule schedule0_ 
+    where
+        schedule0_.email=?
+2023-01-09 19:45:16,938 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-6] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
+2023-01-09 19:45:19,499 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] 
+    select
+        schedule0_.id as id1_0_0_,
+        schedule0_.date as date2_0_0_,
+        schedule0_.title as title3_0_0_,
+        schedule0_.email as email4_0_0_ 
+    from
+        schedule schedule0_ 
+    where
+        schedule0_.id=?
+2023-01-09 19:45:19,501 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [BIGINT] - [5]
+2023-01-09 19:45:19,593 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] 
+    delete 
+    from
+        schedule 
+    where
+        id=?
+2023-01-09 19:45:19,597 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-7] binding parameter [1] as [BIGINT] - [5]
+2023-01-09 19:45:19,613 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-8] 
+    select
+        schedule0_.id as id1_0_,
+        schedule0_.date as date2_0_,
+        schedule0_.title as title3_0_,
+        schedule0_.email as email4_0_ 
+    from
+        schedule schedule0_ 
+    where
+        schedule0_.email=?
+2023-01-09 19:45:19,614 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-8] binding parameter [1] as [VARCHAR] - [nicholas@gmail.com]
